@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const MainContainer = styled.main`
     width: 100%;
     height: auto;
-    /* background: black; */
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -14,7 +13,7 @@ export const MainContainer = styled.main`
 export const MainBanner = styled.div`
  
 
-    height: 60vh;
+    height: auto;
 
     img{
         width: 100%;
