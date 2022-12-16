@@ -1,13 +1,20 @@
 import styled from "styled-components";
+import footer from '../../assets/footer.svg'
 
 export const FooterContainer = styled.footer`
    display: flex;
    flex-direction: column;
-   justify-content: center;
    
     
-   height: 40vh;
-   width: 100%;
+    gap:1rem;
+   
+
+    height: 50vh;
+    width: 100%;
+
+    background: url(${footer});
+    background-size: 100%; 
+    background-repeat: no-repeat;
     
 `
 
@@ -23,13 +30,15 @@ export const FooterLogo = styled.div`
 `
 
 export const FooterDescription = styled.section`
-    background:${(props)=> props.theme['red-700']};
-    height:50vw;
+    
+    
+
+    height:50vh;
     width: 100%;
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     gap:3rem;
     padding:1rem;
 
@@ -64,6 +73,7 @@ export const FooterSocialNetworks = styled.section`
         display: flex;
         align-items: center;
         gap: 1rem;
+
 
         img{
             width: 4rem;
