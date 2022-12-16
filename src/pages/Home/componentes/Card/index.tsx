@@ -28,7 +28,9 @@ export function Card({value, variant, plan}:FlatValue){
                 </CardDescription>
             </CardMain>
             
-            <CardButton>Contratar</CardButton>
+            <CardButton variant={variant}>
+                Contratar
+            </CardButton>
         </CardContainer>
     )
 }

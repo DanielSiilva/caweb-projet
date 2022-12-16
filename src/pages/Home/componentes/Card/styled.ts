@@ -95,8 +95,11 @@ export const CardDescription = styled.section`
     }
 
 `
+interface ButtonCardProps {
+    variant?: string
+}
 
-export const CardButton = styled.button`
+export const CardButton = styled.button<ButtonCardProps>`
     border: none;
     border-radius: 8px;
     width: 70%;
@@ -108,5 +111,12 @@ export const CardButton = styled.button`
     &:hover{
         cursor: pointer;
     }
+
+    ${(props) =>
+        props.variant === 'black' &&
+    css`
+      background: ${props.theme['gray-900']};
+      color: ${(props)=> props.theme['gray-100']};
+    `}
 
 `
