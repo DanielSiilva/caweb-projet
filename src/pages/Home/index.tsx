@@ -1,6 +1,6 @@
 import { MainBanner,MainSlogan,MainContainer,MainCard } from "./styles";
 
-import banner from "../../assets/posterMenor.jpg"
+import banner from "../../assets/bannerOficial.svg"
 
 import { Card } from "./componentes/Card";
 

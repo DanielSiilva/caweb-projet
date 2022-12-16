@@ -12,7 +12,7 @@ export const MainContainer = styled.main`
 
 export const MainBanner = styled.div`
  
-
+  
     height: auto;
 
     img{
