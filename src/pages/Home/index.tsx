@@ -1,15 +1,10 @@
 import { MainBanner,MainSlogan,MainContainer,MainCard } from "./styles";
 import banner from "../../assets/banner.svg"
-import banner1 from "../../assets/banner1.png"
 import { Card } from "./componentes/Card";
 
-interface FlatValue{
-   value: string;
-   variant?:string;
-   plan:string;
-}
 
-export function Home({value,variant,plan}:FlatValue){
+
+export function Home(){
 
 
 
