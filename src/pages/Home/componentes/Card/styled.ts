@@ -29,7 +29,7 @@ interface HeaderCardProps {
 
 export const CardHeader = styled.header<HeaderCardProps>`
     padding: 0.5rem;
-    background: ${(props)=>props.theme['red-700']};
+    background: linear-gradient(90deg, #C72940 37.86%, #2C2D49 138.85%);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 
@@ -50,7 +50,8 @@ export const CardHeader = styled.header<HeaderCardProps>`
     ${(props) =>
         props.variant === 'black' &&
     css`
-      background: ${props.theme['gray-900']};
+      background: linear-gradient(90deg, #2C2D49 26.68%, #C72940 159.26%);
+;
     `}
 
 `
@@ -71,6 +72,7 @@ export const CardInformation = styled.div`
     span{
         color: ${(props)=>props.theme['red-700']};
         font-weight:400;
+
     }
 
 `
@@ -84,14 +86,17 @@ export const CardDescription = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.7rem;
 
     span{
         text-align: center;
         width:80%;
         border-bottom: 2px solid rgba(199, 41, 64, 0.3);
         font-size: 1.3rem;
-        white-space: nowrap
+        white-space: nowrap;
+        padding: 1rem;
+
+
+        /* border: 2px solid red; */
     }
 
 `

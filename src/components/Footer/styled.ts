@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import footer from '../../assets/footer.svg'
+import Newfooter from '../../assets/newfooter.png'
 
 export const FooterContainer = styled.footer`
    display: flex;
@@ -12,7 +12,7 @@ export const FooterContainer = styled.footer`
     height: 50vh;
     width: 100%;
 
-    background: url(${footer});
+    background: url(${Newfooter});
     background-size: 100%; 
     background-repeat: no-repeat;
     

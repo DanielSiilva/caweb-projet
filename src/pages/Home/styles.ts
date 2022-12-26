@@ -26,7 +26,7 @@ export const MainBanner = styled.div`
 
 export const MainSlogan = styled.section`
     height: 8vh;
-    background-color: ${(props)=>props.theme['red-700']};
+    background: linear-gradient(90deg, #C72940 37.86%, #2C2D49 138.85%);
     color: ${(props)=>props.theme['gray-100']};
     padding: 0.5rem;
     text-align: center;
