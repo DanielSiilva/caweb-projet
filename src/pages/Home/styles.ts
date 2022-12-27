@@ -8,6 +8,11 @@ export const MainContainer = styled.main`
     gap: 1rem;
 
     margin-top: 4rem;
+
+    @media (max-width: 667px) {
+        margin-top: 0.5rem;
+    }
+   
 `
 
 export const MainBanner = styled.div`
@@ -34,6 +39,15 @@ export const MainSlogan = styled.section`
     font-weight: 700;
     font-family: 'Roboto';
     
+    @media (max-width: 667px) {
+        height: 5vh;
+        font-size: 1.5rem;
+        text-align: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 `
 
@@ -46,5 +60,11 @@ export const MainCard = styled.section`
     justify-content: center;
     align-items: center;
     gap: 3rem;
+
+
+    @media (max-width: 667px) {
+        display: flex;
+        flex-direction: column;
+    }
 
 `

@@ -13,6 +13,12 @@ export const CardContainer = styled.div`
     align-items: center;
     gap: 3rem;
 
+
+    @media (max-width: 667px) {
+        
+        width: 100%;
+    }
+
     
 `
 

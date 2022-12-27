@@ -1,4 +1,4 @@
-import { FooterContainer,FooterDescription, FooterRights, FooterSocialNetworks,FooterContacts, FooterLogo } from "./styled";
+import { Contacts, FooterContainer,FooterDescription, FooterRights, LogoContainer, SocialNetworks } from "./styled";
 
 import LogoFooter from '../../assets/logo.svg'
 
@@ -13,27 +13,30 @@ export function Footer(){
     return (
         <FooterContainer>
             <FooterDescription>
-                <FooterLogo>
-                    <img src={LogoFooter} />
-                </FooterLogo>
+                <LogoContainer>
+                    <img  src={LogoFooter}/>
+                </LogoContainer>
 
-                <FooterSocialNetworks>
-                     <p>Siga nossas redes sociais</p>
-                     <div>
-                          <img src={Facebook}/> 
-                          <img src={Email}/> 
-                          <img src={Instagram}/> 
-                          <img src={Whats}/> 
-                     </div>
-                </FooterSocialNetworks>
+                <SocialNetworks>
+                    <p>Siga nosssas redes sociais</p>
 
-                <FooterContacts>
-                    <p>Central de Ajuda</p>
+                    <div>
+                        <img src={Facebook}/>
+                        <img src={Email}/>
+                        <img src={Instagram}/>
+                        <img src={Whats}/>
+                    </div>
+                </SocialNetworks>
+
+                <Contacts>
+                    <p>Central de Ajudas</p>
                     <span>(99) 98567-7654</span>
                     <span>(99) 98567-7654</span>
                     <span>Cawebassistencia@gmail.com</span>
-                </FooterContacts>
+                </Contacts>
+
             </FooterDescription>
+            
             <FooterRights>
                 <p> 
                     © 2022 Todos direitos reservados | desenvolvido por 
