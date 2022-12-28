@@ -51,6 +51,7 @@ export const CardHeader = styled.header<HeaderCardProps>`
     span{
         font-size: 2rem;
         color: ${(props)=>props.theme['yellow-700']};
+
     }
 
     ${(props) =>
@@ -79,6 +80,7 @@ export const CardInformation = styled.div`
         color: ${(props)=>props.theme['red-700']};
         font-weight:400;
 
+        
     }
 
 `
@@ -97,12 +99,22 @@ export const CardDescription = styled.section`
         text-align: center;
         width:80%;
         border-bottom: 2px solid rgba(199, 41, 64, 0.3);
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         white-space: nowrap;
         padding: 1rem;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
 
-        /* border: 2px solid red; */
+       
+
+        img{
+            width: 1.5rem;
+        }
+
+        
     }
 
 `
