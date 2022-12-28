@@ -11,12 +11,17 @@ export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 
 
     @media (max-width: 667px) {
-        
         width: 100%;
+    }
+
+    &:hover{
+        cursor: pointer;
+        -webkit-transform: scale(1);
+        transform: scale(1.04);
     }
 
     
@@ -126,6 +131,7 @@ export const CardButton = styled.button<ButtonCardProps>`
     border: none;
     border-radius: 8px;
     width: 70%;
+    height:10%;
     padding: 0.3rem;
     background-color: ${(props)=> props.theme['yellow-700']};
     font-weight: 700;
