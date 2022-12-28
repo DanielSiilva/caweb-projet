@@ -1,18 +1,19 @@
 import styled from "styled-components";
-import Newfooter from '../../assets/newfooter.png'
 
-import footermobile from '../../assets/footermobile.jpg'
+
+import background from '../../assets/background.svg'
+import background_mobile from '../../assets/background_mobile.svg'
 
 export const FooterContainer = styled.footer`
     display: flex;
     flex-direction: column;
 
-    background: url(${Newfooter});
+    background: url(${background});
     background-size: 100%; 
     background-repeat: no-repeat;
 
     @media (max-width: 667px) {
-        background: url(${footermobile});
+        background: url(${background_mobile});
         background-size: 100%; 
         background-repeat: no-repeat;
 

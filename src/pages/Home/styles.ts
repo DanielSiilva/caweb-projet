@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import bannher_mobile from "../../assets/bannher_mobile.svg"
+
 export const MainContainer = styled.main`
     width: 100%;
     height: auto;
@@ -25,6 +27,11 @@ export const MainBanner = styled.div`
         height: 100%;
         object-fit: cover;
     }
+
+    @media (max-width: 667px) {
+        background-image: url(${bannher_mobile});
+    }
+
 
 `
 
