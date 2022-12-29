@@ -12,6 +12,9 @@ export const FooterContainer = styled.footer`
     background-size: 100%; 
     background-repeat: no-repeat;
 
+    width: 100%;
+    height: 100%;
+
     @media (max-width: 667px) {
         background: url(${background_mobile});
         background-size: 100%; 
