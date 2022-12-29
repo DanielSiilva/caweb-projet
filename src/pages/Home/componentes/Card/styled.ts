@@ -11,7 +11,7 @@ export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 
 
     @media (max-width: 667px) {
@@ -63,7 +63,13 @@ export const CardHeader = styled.header<HeaderCardProps>`
         props.variant === 'black' &&
     css`
       background: linear-gradient(90deg, #2C2D49 26.68%, #C72940 159.26%);
-;
+
+      span{
+        font-weight: bold;
+      }
+
+     
+
     `}
 
 `
@@ -71,21 +77,25 @@ export const CardHeader = styled.header<HeaderCardProps>`
 
 
 
-export const CardInformation = styled.div`
+export const CardInformation = styled.div<HeaderCardProps>`
     display: flex;
     flex-direction: column;
     align-items: center;
     p{
         font-size: 2rem;
+        text-align: center;
         font-weight:700;
         color: ${(props)=> props.theme['gray-900']};
     }
 
+    p:nth-child(3){
+        font-size: 1.6rem;
+       
+    }
+
     span{
         color: ${(props)=>props.theme['red-700']};
-        font-weight:400;
-
-        
+        font-weight:400;   
     }
 
 `

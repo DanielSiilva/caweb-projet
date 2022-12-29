@@ -32,17 +32,22 @@ export function Home(){
 
             <MainCard>
               <Card 
-                  value={'80,00'}
-                  plan='50'              
+                  value={'R$ 80,00'}
+                  plan='50'
+                  time='Megas' 
+                  month="Por mês"             
                />
               <Card
-                  value={'100,00'}
-                  plan='550'   
+                  value={'R$ 100,00'}
+                  plan='550' 
+                  time='Megas' 
+                  month="Por mês"     
                />
               <Card
-                  value={'00,00'}
                   variant={'black'}
-                  plan='1000' 
+                  plan='OUTROS' 
+                  time='Planos' 
+                  description={'Ignore isso por enquanto'}  
               />
             </MainCard>
         </MainContainer>

@@ -6,12 +6,15 @@ import attendance from "../../../../assets/Vectoratendimento.svg"
 
 
 interface FlatValue{
-    value: string;
+    value?: string[] | string;
     variant?: string;
-    plan:string;
+    plan?:string;
+    time?:string;
+    month?:string;
+    description?:string;
 }
 
-export function Card({value, variant, plan}:FlatValue){
+export function Card({value, variant, plan,time, month, description}:FlatValue){
 
 
 
@@ -20,11 +23,12 @@ export function Card({value, variant, plan}:FlatValue){
             <CardMain>
                 <CardHeader variant={variant}>
                     <p>{plan}</p>
-                    <span>Megas</span>
+                    <span>{time}</span>
                 </CardHeader>
                 <CardInformation>
-                    <p>R$ {value}</p>
-                    <span>Por mês</span>
+                    <p>{value}</p>
+                    <span>{month}</span>
+                    <p>{description}</p>
                 </CardInformation>
                 <CardDescription>
                     <span> 
