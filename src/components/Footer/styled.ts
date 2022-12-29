@@ -20,7 +20,7 @@ export const FooterContainer = styled.footer`
         background-size: 100%; 
         background-repeat: no-repeat;
 
-        height: auto;
+        
     }
  
 `
