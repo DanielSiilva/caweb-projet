@@ -75,3 +75,18 @@ export const MainCard = styled.section`
     }
 
 `
+
+// Teste wats
+
+export const WhatsappBox = styled.div`
+    position: fixed;
+    top: 70%;
+    right: 0;
+    padding: 10px;
+    z-index: 10000000;
+
+    img{
+        width: 3.5rem;
+    }
+
+`

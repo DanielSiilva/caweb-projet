@@ -1,6 +1,7 @@
-import { MainBanner,MainSlogan,MainContainer,MainCard } from "./styles";
+import { MainBanner,MainSlogan,MainContainer,MainCard, WhatsappBox } from "./styles";
 
 import banner from "../../assets/bannerOficial.svg"
+import Whatsapp from "../../assets/whatsappFix.svg"
 
 import { Card } from "./componentes/Card";
 
@@ -18,6 +19,17 @@ export function Home(){
             <MainSlogan>
                <span>AQUI VOCÊ FAZ O SEU PLANO</span>
             </MainSlogan>
+
+            {/* Teste */}
+            <WhatsappBox>
+                <a 
+                    href="https://api.whatsapp.com/send?phone=5562994524747&text=Queria uma informação sobre um produto" >
+                    <img   src={Whatsapp}  title='Entre em contato conosco'/>
+                </a>
+            </WhatsappBox>
+
+
+
             <MainCard>
               <Card 
                   value={'80,00'}
