@@ -14,7 +14,7 @@ export function Home(){
    return(
         <MainContainer>
             <MainBanner>
-                  <img  src={banner}/>
+                  {/* <img  src={banner}/> */}
             </MainBanner>
             <MainSlogan>
                <span>AQUI VOCÊ FAZ O SEU PLANO</span>

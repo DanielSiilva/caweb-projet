@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const LayoutContainer = styled.div`
-  max-width: 100vw;
-  max-height: 100vh;
+  width: 100%;
+  max-height: auto;
  
 
   display: flex;
