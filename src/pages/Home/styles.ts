@@ -23,7 +23,10 @@ export const MainBanner = styled.div`
     /* border: 3px solid black; */
     
     height: 70vh;
-    
+
+    img{
+        display: none;
+    }
 
     /* img{
         width: 100%;
@@ -37,8 +40,13 @@ export const MainBanner = styled.div`
 
 
     @media (max-width: 667px) {
-        background-image: url(${bannher_mobile});
-        background-size: cover;
+
+        background-image: none;
+
+        img{
+            display: block;
+        }
+        
         height: 30vh;
         
     }

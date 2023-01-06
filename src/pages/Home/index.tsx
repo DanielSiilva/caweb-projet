@@ -1,6 +1,6 @@
 import { MainBanner,MainSlogan,MainContainer,MainCard, WhatsappBox } from "./styles";
 
-import banner from "../../assets/bannerOficial.svg"
+import banner from "../../assets/bannher_mobile.svg"
 import Whatsapp from "../../assets/whatsappFix.svg"
 
 import { Card } from "./componentes/Card";
@@ -14,10 +14,10 @@ export function Home(){
    return(
         <MainContainer>
             <MainBanner>
-                  {/* <img  src={banner}/> */}
+                  <img  src={banner}/>
             </MainBanner>
             <MainSlogan>
-               <span>AQUI VOCÊ FAZ O SEU PLANO</span>
+               <span> AQUI VOCÊ FAZ O SEU PLANO</span>
             </MainSlogan>
 
             {/* Botão waths nova feature*/}
