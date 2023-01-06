@@ -10,7 +10,9 @@ export const HeaderContainer = styled.header `
 
     width: 100vw;
     height: 10vh;
-    padding: 0.5rem 7rem;
+    padding: 0.5rem 11.5em;
+
+
     border-bottom: 3px solid ${(props)=> props.theme['gray-900']};
 
     background:${(props)=>props.theme['gray-100']};

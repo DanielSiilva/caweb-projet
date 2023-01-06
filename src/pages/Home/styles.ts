@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 import bannher_mobile from "../../assets/bannher_mobile.svg"
+import bannerOficial from "../../assets/bannerOficial.svg"
 
 export const MainContainer = styled.main`
     width: 100%;
-    height: auto;
+    height:  auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -18,20 +19,29 @@ export const MainContainer = styled.main`
 `
 
 export const MainBanner = styled.div`
- 
-  
-    height: auto;
 
-    img{
+    /* border: 3px solid black; */
+    
+    height: 70vh;
+    
+
+    /* img{
         width: 100%;
         height: 100%;
         object-fit: cover;
-    }
+    } */
+
+    background-image: url(${bannerOficial});
+    background-size: cover;
+    
+
 
     @media (max-width: 667px) {
         background-image: url(${bannher_mobile});
+        background-size: cover;
+        height: 30vh;
+        
     }
-
 
 `
 
@@ -66,7 +76,7 @@ export const MainCard = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
 
 
     @media (max-width: 667px) {

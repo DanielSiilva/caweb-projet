@@ -14,16 +14,16 @@ export function Home(){
    return(
         <MainContainer>
             <MainBanner>
-                  <img  src={banner}/>
+                  {/* <img  src={banner}/> */}
             </MainBanner>
             <MainSlogan>
                <span>AQUI VOCÊ FAZ O SEU PLANO</span>
             </MainSlogan>
 
-            {/* Teste */}
+            {/* Botão waths nova feature*/}
             <WhatsappBox>
                 <a 
-                    href="https://api.whatsapp.com/send?phone=5562994524747&text=Queria uma informação sobre um produto" >
+                    href="https://api.whatsapp.com/send?phone=559981697800&text=Queria uma informação sobre um produto" >
                     <img   src={Whatsapp}  title='Entre em contato conosco'/>
                 </a>
             </WhatsappBox>
@@ -47,7 +47,10 @@ export function Home(){
                   variant={'black'}
                   plan='OUTROS' 
                   time='Planos' 
-                  description={'Ignore isso por enquanto'}  
+                  description={`
+                    Fale conosco e personalise seu plano
+
+                  `}  
               />
             </MainCard>
         </MainContainer>
