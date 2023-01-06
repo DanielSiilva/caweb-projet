@@ -18,10 +18,7 @@ export const MainContainer = styled.main`
 `
 
 export const MainBanner = styled.div`
- 
-  
-    height: auto;
-
+    
     img{
         width: 100%;
         height: 100%;
@@ -66,7 +63,7 @@ export const MainCard = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
 
 
     @media (max-width: 667px) {

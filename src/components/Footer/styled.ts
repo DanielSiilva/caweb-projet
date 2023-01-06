@@ -19,7 +19,7 @@ export const FooterContainer = styled.footer`
         background: url(${background_mobile});
         background-size: 100%; 
         background-repeat: no-repeat;
-
+        
         
     }
  
