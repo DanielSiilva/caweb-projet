@@ -11,11 +11,12 @@ export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    gap: 4rem;
 
 
     @media (max-width: 667px) {
         width: 100%;
+
     }
 
     &:hover{
@@ -23,6 +24,7 @@ export const CardContainer = styled.div`
         -webkit-transform: scale(1);
         transform: scale(1.04);
     }
+
 
     
 `
@@ -43,6 +45,7 @@ export const CardHeader = styled.header<HeaderCardProps>`
     background: linear-gradient(90deg, #C72940 37.86%, #2C2D49 138.85%);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+  
 
     display: flex;
     flex-direction: column;
@@ -50,6 +53,7 @@ export const CardHeader = styled.header<HeaderCardProps>`
 
     p{
         font-size: 4rem;
+        font-weight:bold;
         color: ${(props)=>props.theme['gray-100']};
     }
 
@@ -67,9 +71,6 @@ export const CardHeader = styled.header<HeaderCardProps>`
       span{
         font-weight: bold;
       }
-
-     
-
     `}
 
 `
@@ -92,6 +93,7 @@ export const CardInformation = styled.div<HeaderCardProps>`
         font-size: 1.6rem;
        
     }
+
 
     span{
         color: ${(props)=>props.theme['red-700']};
