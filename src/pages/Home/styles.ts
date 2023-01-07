@@ -45,6 +45,10 @@ export const MainBanner = styled.div`
 
         img{
             display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
         }
         
         height: 30vh;
