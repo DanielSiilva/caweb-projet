@@ -15,12 +15,16 @@ export const FooterContainer = styled.footer`
     width: 100%;
     height: 100%;
 
+ 
+
     @media (max-width: 667px) {
         background: url(${background_mobile});
-        background-size: 100%; 
         background-repeat: no-repeat;
         
-        
+        width: 100%;
+        height: 100%;
+
+
     }
  
 `
@@ -46,10 +50,13 @@ export const FooterDescription = styled.section`
     @media (max-width: 667px) {
         display: flex;
         flex-direction: column;
+        align-items: center;
 
         height: auto;
         padding: 0.4rem;
-        gap: 1rem;
+        gap: 0.5rem;
+
+        margin-top: 2.5rem;
     }
     
 `
@@ -68,7 +75,7 @@ export const LogoContainer = styled.div`
     }
 
     @media (max-width: 667px) {
-        width: 5rem;
+        width: 1rem;
 
         border-right: none ;
         height: 100%;
