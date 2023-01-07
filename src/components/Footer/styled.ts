@@ -7,6 +7,7 @@ import background_mobile from '../../assets/background_mobile.svg'
 export const FooterContainer = styled.footer`
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     background: url(${background});
     background-size: 100%; 
@@ -15,7 +16,7 @@ export const FooterContainer = styled.footer`
     width: 100%;
     height: 100%;
 
- 
+   
 
     @media (max-width: 667px) {
         background: url(${background_mobile});
@@ -23,7 +24,7 @@ export const FooterContainer = styled.footer`
         
         width: 100%;
         height: 100%;
-
+        
 
     }
  
@@ -37,10 +38,10 @@ export const FooterDescription = styled.section`
     padding: 0rem 2rem;
 
     display: flex;
-
+    justify-content: center;
     align-items: center;
   
-    gap: 2rem;
+    gap: 3rem;
 
     margin-top: 5rem;
 
@@ -63,14 +64,14 @@ export const FooterDescription = styled.section`
 
 export const LogoContainer = styled.div`
     border-right: 1px solid white ;
-    height: 80%;
+    height: 60%;
 
 
     display: flex;
-    justify-content: center;
+
 
     img{
-        width: 20rem;
+        width: 10rem;
         margin-right: 2rem;
     }
 
@@ -99,9 +100,9 @@ export const SocialNetworks = styled.section`
     gap: 2rem;
     
     border-right: 1px solid white ;
-    height: 80%;
-    margin-right: 2rem;
-    padding: 1rem;
+    height: 60%;
+    /* margin-right: 2rem; */
+    padding: 2rem;
 
     p{
         font-family: 'Roboto';
@@ -118,7 +119,7 @@ export const SocialNetworks = styled.section`
         gap: 2rem;
 
         img{
-            width: 4rem;
+            width: 3rem;
         }
 
     }
@@ -179,11 +180,11 @@ export const Contacts = styled.div`
 
 
     p{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     span{
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
 
