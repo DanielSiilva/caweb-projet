@@ -43,7 +43,7 @@ export const HeaderContainer = styled.header `
         display: flex;
         width: 100vw;
         padding: 0;
-        height: 35vh;
+        height: auto;
         border-bottom: none;
         position: initial;
 
