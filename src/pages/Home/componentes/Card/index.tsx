@@ -48,8 +48,10 @@ export function Card({value, variant, plan,time, month, description}:FlatValue){
                 </CardDescription>
             </CardMain>
             
-            <CardButton variant={variant}>
-                Contratar
+            <CardButton variant={variant}> 
+                <a href="https://api.whatsapp.com/send?phone=559981697800&text=Olá queria saber um pouco mais sobre os planos">
+                    Contratar
+                </a>
             </CardButton>
         </CardContainer>
     )

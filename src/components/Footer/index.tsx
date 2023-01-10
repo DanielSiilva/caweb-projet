@@ -30,9 +30,9 @@ export function Footer(){
 
                 <Contacts>
                     <p>Central de Ajudas</p>
-                    <span>(99) 98567-7654</span>
-                    <span>(99) 98567-7654</span>
-                    <span>Cawebassistencia@gmail.com</span>
+                    <span>(99) 98133-8612</span>
+                    <span>(99) 98169-7800</span>
+                    <span>cawebinformatica@gmail.com</span>
                 </Contacts>
 
             </FooterDescription>
@@ -40,7 +40,7 @@ export function Footer(){
             <FooterRights>
                 <p> 
                     © 2022 Todos direitos reservados | desenvolvido por 
-                    <span> Davi Belchior</span>
+                    <span> <a href="https://www.linkedin.com/in/daniel-da-silva-de-sousa-555a55226/">Daniel Sousa</a></span>
                 </p>
             </FooterRights>
         </FooterContainer>
