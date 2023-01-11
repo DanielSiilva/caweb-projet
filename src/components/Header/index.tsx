@@ -11,6 +11,11 @@ export function Header (){
 
             <nav>
                 <a href="#">Planos</a>
+
+                <a href="https://api.whatsapp.com/send?phone=559981697800&text=Queria uma informação sobre um produto">
+                    Segunda via de Boletos
+                </a>
+
                 <a href="#">Contatos</a>
             </nav>
         </HeaderContainer>

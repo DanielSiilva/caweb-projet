@@ -117,8 +117,8 @@ export const WhatsappBox = styled.div`
     @media (max-width: 667px) {
         width:60px;
         height:60px;
-        bottom:150px;
-        right:10px;
+        bottom:100px;
+        right:5px;
     }
 
 `
