@@ -96,7 +96,7 @@ export const WhatsappBox = styled.div`
     position:fixed;
     width:80px;
     height:80px;
-    bottom:40px;
+    bottom:20px;
     right:40px;
     background-color: ${props=> props.theme['gray-100']};
     border-radius: 50px;
