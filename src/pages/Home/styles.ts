@@ -19,36 +19,23 @@ export const MainContainer = styled.main`
 `
 
 export const MainBanner = styled.div`
-
-    /* border: 3px solid black; */
-    
     height: 70vh;
 
     img{
         display: none;
     }
 
-    /* img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    } */
-
     background-image: url(${bannerOficial});
     background-size: cover;
     
-
-
     @media (max-width: 667px) {
-
         background-image: none;
 
         img{
             display: block;
             width: 100%;
             height: 100%;
-            object-fit: cover;
-            
+            object-fit: cover; 
         }
         
         height: 30vh;
@@ -101,14 +88,37 @@ export const MainCard = styled.section`
 // Teste wats
 
 export const WhatsappBox = styled.div`
-    position: fixed;
-    top: 70%;
-    right: 0;
-    padding: 10px;
-    z-index: 10000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    position:fixed;
+    width:80px;
+    height:80px;
+    bottom:40px;
+    right:40px;
+    background-color: ${props=> props.theme['gray-100']};
+    border-radius: 50px;
+    text-align:center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 100000;
+;
 
     img{
-        width: 3.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 3rem;
+    }
+
+
+    @media (max-width: 667px) {
+        width:60px;
+        height:60px;
+        bottom:150px;
+        right:10px;
     }
 
 `

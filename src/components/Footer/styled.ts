@@ -68,6 +68,7 @@ export const LogoContainer = styled.div`
 
 
     display: flex;
+    
 
 
     img{
@@ -80,6 +81,7 @@ export const LogoContainer = styled.div`
 
         border-right: none ;
         height: 100%;
+        justify-content: center;
     }
 
 `
@@ -215,10 +217,15 @@ export const FooterRights = styled.section`
     text-align: center;
     font-size:0.8rem;
     width: 100%;
-    span{
-        color: ${(props)=>props.theme['yellow-700']};
-    }
 
+    span{
+        a{
+            text-decoration: none;
+            color: ${(props)=>props.theme['yellow-700']};
+            cursor: pointer;
+        }
+        
+    }
 
 `
 

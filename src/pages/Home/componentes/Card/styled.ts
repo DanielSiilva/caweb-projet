@@ -151,18 +151,28 @@ export const CardButton = styled.button<ButtonCardProps>`
     height:10%;
     padding: 0.3rem;
     background-color: ${(props)=> props.theme['yellow-700']};
-    font-weight: 700;
-    font-size: 1rem;
+    
     
     &:hover{
         cursor: pointer;
     }
 
+    a{
+        text-decoration:none;
+        color: ${props=> props.theme['gray-900']};
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    
+
     ${(props) =>
         props.variant === 'black' &&
     css`
       background: ${props.theme['gray-900']};
-      color: ${(props)=> props.theme['gray-100']};
+      a{
+        color: ${(props)=> props.theme['gray-100']};
+      }
+      
     `}
 
 `
