@@ -15,7 +15,7 @@ export const CardContainer = styled.div`
 
 
     @media (max-width: 667px) {
-        width: 100%;
+        width: 95%;
 
         &hover{
             -webkit-transform: none;
