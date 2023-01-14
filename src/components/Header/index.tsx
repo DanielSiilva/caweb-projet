@@ -8,7 +8,6 @@ export function Header (){
     return(
         <HeaderContainer>
             <img src={Logo} title='Logo' />
-
             <nav>
                 <a href="#">Planos</a>
 
