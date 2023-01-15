@@ -88,9 +88,8 @@ export const MainCard = styled.section`
 // Teste wats
 
 export const WhatsappBox = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
+    
     
 
     position:fixed;
@@ -115,6 +114,10 @@ export const WhatsappBox = styled.div`
 
 
     @media (max-width: 667px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         width:60px;
         height:60px;
         bottom:100px;

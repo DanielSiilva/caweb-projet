@@ -44,13 +44,11 @@ export function Home(){
                   month="Por mês"     
                />
               <Card
+                  value={'R$ 00,00'}
                   variant={'black'}
-                  plan='OUTROS' 
-                  time='Planos' 
-                  description={`
-                    Fale conosco e personalise seu plano
-
-                  `}  
+                  plan='1000' 
+                  time='Megas' 
+                  month="Por mês"
               />
             </MainCard>
         </MainContainer>

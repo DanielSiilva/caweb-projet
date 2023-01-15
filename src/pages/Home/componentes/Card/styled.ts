@@ -150,7 +150,7 @@ export const CardButton = styled.button<ButtonCardProps>`
     width: 70%;
     height:10%;
     padding: 0.3rem;
-    background-color: ${(props)=> props.theme['yellow-700']};
+    background-color: ${(props)=> props.theme['button-card']};
     
     
     &:hover{
@@ -159,16 +159,16 @@ export const CardButton = styled.button<ButtonCardProps>`
 
     a{
         text-decoration:none;
-        color: ${props=> props.theme['gray-900']};
+        color: ${props=> props.theme['gray-100']};
         font-weight: 700;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     
 
     ${(props) =>
         props.variant === 'black' &&
     css`
-      background: ${props.theme['gray-900']};
+      background: ${props.theme['button-card']};
       a{
         color: ${(props)=> props.theme['gray-100']};
       }
