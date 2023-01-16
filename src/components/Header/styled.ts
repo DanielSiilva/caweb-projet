@@ -41,7 +41,9 @@ export const HeaderContainer = styled.header `
 
     @media (max-width: 667px) {
         display: flex;
-        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         padding: 0;
         height: auto;
         border-bottom: none;
@@ -56,18 +58,18 @@ export const HeaderContainer = styled.header `
            flex-direction: column;
            gap: 0.5rem;
             
-           width: 100%;
+           width: 90%;
            padding: 1rem 1rem;
          
             a{
                 font-weight:700;
-                color: ${(props)=> props.theme['gray-900']};
+                color: ${(props)=> props.theme['gray-100']};
                 text-decoration:none;
                 text-align: center;
                 padding: 0.7rem;
                 
 
-                background: #EAE9E9;
+                background: linear-gradient(90deg, #C72940 50%, #2C2D49 142.66%);
                 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
                 border-radius: 8px;
 
