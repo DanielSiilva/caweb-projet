@@ -34,15 +34,15 @@ export const FooterContainer = styled.footer`
 `
 
 export const FooterItems = styled.section`
-    
+ 
 
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
     margin-top: 6rem;
 
     padding: 2rem;
     width: 100%;
-    height: 100%;
+    height: 80%;
 
     @media (max-width: 667px) {
         flex-direction: column;
@@ -52,7 +52,7 @@ export const FooterItems = styled.section`
         margin-top: 4rem;
         gap:2rem;
 
-        padding: 5rem;
+       
 
     }
 
@@ -68,9 +68,7 @@ export const SocialNetworks = styled.div`
     gap: 1.4rem;
 
     width: 20%;
-
-   
-
+    
     span{
         font-family: 'Roboto';
         font-style: normal;
@@ -172,10 +170,10 @@ export const Help = styled(SocialNetworks)`
 `
 
 export const Branches = styled(Help)`
-    width: 20%;
-@media (max-width: 667px) {
-    display: none;
-}
+    width: 10%;
+    @media (max-width: 667px) {
+        display: none;
+    }
 
 `
 export const DownloadApp = styled(SocialNetworks)`
@@ -185,9 +183,10 @@ export const DownloadApp = styled(SocialNetworks)`
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap:0rem;
+        gap:0px;
 
         img{
+
             width: 8rem;
         }
     }
