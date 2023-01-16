@@ -7,199 +7,189 @@ import background_mobile from '../../assets/background_mobile.svg'
 export const FooterContainer = styled.footer`
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 
     background: url(${background});
     background-size: 100%; 
     background-repeat: no-repeat;
 
     width: 100%;
-    height: 100%;
+    height: 50vh;
+    
+
+   
 
    
 
     @media (max-width: 667px) {
         background: url(${background_mobile});
         background-repeat: no-repeat;
+        background-size: cover; 
         
         width: 100%;
         height: 100%;
-        
 
     }
  
 `
 
-
-
-export const FooterDescription = styled.section`
-    height:50vh;
-    width: 100%;
-    padding: 0rem 2rem;
+export const FooterItems = styled.section`
+    
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    gap: 3rem;
+    gap: 2rem;
+    margin-top: 6rem;
 
-    margin-top: 5rem;
-
-
-
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
 
     @media (max-width: 667px) {
-        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        
+        margin-top: 4rem;
+        gap:2rem;
 
-        height: auto;
-        padding: 0.4rem;
-        gap: 0.5rem;
+        padding: 5rem;
 
-        margin-top: 2.5rem;
     }
-    
+
 `
-
-export const LogoContainer = styled.div`
-    border-right: 1px solid white ;
-    height: 60%;
-
-
-    display: flex;
-    
-
-
+export const Logo = styled.div`
     img{
         width: 10rem;
-        margin-right: 2rem;
     }
-
-    @media (max-width: 667px) {
-        width: 1rem;
-
-        border-right: none ;
-        height: 100%;
-        justify-content: center;
-    }
-
 `
-
-
-
-
-
-
-export const SocialNetworks = styled.section`
-
-
-
+export const SocialNetworks = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    
-    border-right: 1px solid white ;
-    height: 60%;
-    /* margin-right: 2rem; */
-    padding: 2rem;
+    gap: 1.4rem;
 
-    p{
-        font-family: 'Roboto';
-        font-style: normal;
-        white-space: nowrap;
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 47px;
-        color:  ${(props)=> props.theme['gray-100']};
-    }
+    width: 20%;
 
-    div{
-        display: flex;
-        gap: 2rem;
-
-        img{
-            width: 3rem;
-        }
-
-    }
-
-    @media (max-width: 667px) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-
-        border-right: none ;
-        height: 100%;
-        width: 90%;
-        margin-right: 0rem;
-        
-        padding: 0.5rem;
-        border-bottom: 1px solid ${(props)=> props.theme['gray-100']};
-        
-        p{
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 28px;
-            display: flex;
-            align-items: center;
-            letter-spacing: 0.09em;
-            white-space: nowrap;
-           
-        }
-
-        div{
-            margin-bottom: 2rem;
-            img{
-
-                width: 3rem;
-            }
-        }
-    
-    }
-
-    
-
-`
-
-
-
-export const Contacts = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    color:  ${(props)=> props.theme['gray-100']};
-
-
-    p{
-        font-size: 2rem;
-    }
+   
 
     span{
-        font-size: 1rem;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2.063rem;
+        display: flex;
+        align-items: center;
+        color: ${props => props.theme['yellow-700']};
+    }
+
+    section{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        img{
+
+            width: 2rem;
+        }
     }
 
 
-
     @media (max-width: 667px) {
-        p{
-            font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.5rem;
+        white-space: nowrap;
+        gap: 1rem;
+        
+        width: 90%;
+        
+        span{
+            font-size:1.2rem;
+            text-decoration: underline;
         }
+
+        section{
+            gap: 1rem;
+        }
+    }
+`
+
+export const Help = styled(SocialNetworks)`
+
+    width: 20%;
+    
+    section{
+        display: flex;
+        gap:0.2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
 
         span{
             font-size: 1rem;
         }
 
+        p{
+            font-family: "Roboto";
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.2rem;
+            letter-spacing: 0.09em;
+            text-align: center;
+            color: ${props => props.theme['gray-100']};
+        }
+    }
+
+
+    @media (max-width: 667px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1rem;
+        white-space: nowrap;
+        gap: 1rem;
+        
+        width: 90%;
+        
+        span{
+            font-size:1.6rem;
+        }
+
+        section{
+            gap: 0.2rem;
+
+
+            p{
+                text-align: center;
+                font-size:1rem;
+                width: 100%;
+            }
+        }
+    }
+
+`
+
+export const Branches = styled(Help)`
+    width: 20%;
+@media (max-width: 667px) {
+    display: none;
+}
+
+`
+export const DownloadApp = styled(SocialNetworks)`
+    
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:0rem;
+
+        img{
+            width: 8rem;
+        }
     }
 
 `
@@ -207,32 +197,39 @@ export const Contacts = styled.div`
 
 
 
+export const Footerr = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-
-
-export const FooterRights = styled.section`
-    background:${(props)=> props.theme['gray-900']};
-    color:${(props)=> props.theme['gray-100']};
     padding: 0.5rem;
     text-align: center;
-    font-size:0.8rem;
-    width: 100%;
+    color: ${props=> props.theme['gray-100']};
+    background-color: rgba(44, 45, 73, 1);
 
-    span{
-        a{
-            text-decoration: none;
-            color: ${(props)=>props.theme['yellow-700']};
-            cursor: pointer;
+    p{
+        font-family: 'Roboto';
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.188rem;
+        letter-spacing: 0.09em;
+        text-align: left;
+        white-space: nowrap;
+        width: 100%;
+        text-align: center;
+
+        span{
+            color: ${props=> props.theme['yellow-700']};
         }
-        
+    }
+
+    @media (max-width: 667px) {
+        p{
+           
+            font-size: 0.5rem;
+            text-decoration:underline;
+        }
+
     }
 
 `
-
-
-
-
-
-
-
-
