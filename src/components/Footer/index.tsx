@@ -24,7 +24,7 @@ export function Footer(){
                         <span>Siga nossas redes sociais </span>
 
                         <section>
-                            <a href="">
+                            <a href="https://www.facebook.com/cawebinternet/">
                                 <img src={Facebook}/>
                             </a>
                             
@@ -32,11 +32,11 @@ export function Footer(){
                                 <img src={Email}/>
                             </a>
 
-                            <a href="">
+                            <a href="https://www.instagram.com/cawebinternet/">
                                 <img src={Instagram}/>
                             </a>
 
-                            <a href="">
+                            <a href="https://api.whatsapp.com/send?phone=559981697800&text=Olá queria saber um pouco mais sobre os planos">
                                 <img src={Whats}/>
                             </a>
                         </section>
@@ -57,6 +57,7 @@ export function Footer(){
 
                         <section>
                             <p> Codó - MA</p>
+                            <p>POVOADO KM-17, Codó - Ma</p>
                             <p>Timbiras - Ma</p>
                         </section>
                     </Branches>

@@ -7,7 +7,6 @@ import background_mobile from '../../assets/background_mobile.svg'
 export const FooterContainer = styled.footer`
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     background: url(${background});
     background-size: 100%; 
@@ -24,6 +23,7 @@ export const FooterContainer = styled.footer`
     @media (max-width: 667px) {
         background: url(${background_mobile});
         background-repeat: no-repeat;
+        background-size: 100%; 
         background-size: cover; 
         
         width: 100%;
@@ -37,6 +37,7 @@ export const FooterItems = styled.section`
  
 
     display: flex;
+    align-items: center;
     gap: 3rem;
     margin-top: 6rem;
 
@@ -51,9 +52,6 @@ export const FooterItems = styled.section`
         
         margin-top: 4rem;
         gap:2rem;
-
-       
-
     }
 
 `
@@ -64,10 +62,12 @@ export const Logo = styled.div`
 `
 export const SocialNetworks = styled.div`
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 1.4rem;
 
     width: 20%;
+    height: 20%;
     
     span{
         font-family: 'Roboto';
@@ -115,7 +115,7 @@ export const SocialNetworks = styled.div`
 
 export const Help = styled(SocialNetworks)`
 
-    width: 20%;
+
     
     section{
         display: flex;
@@ -161,6 +161,7 @@ export const Help = styled(SocialNetworks)`
 
             p{
                 text-align: center;
+                white-space: nowrap;
                 font-size:1rem;
                 width: 100%;
             }
@@ -169,25 +170,61 @@ export const Help = styled(SocialNetworks)`
 
 `
 
-export const Branches = styled(Help)`
-    width: 10%;
-    @media (max-width: 667px) {
-        display: none;
+export const Branches = styled(SocialNetworks)`
+
+
+    section{
+        display: flex;
+        gap:0.2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+
+        span{
+            font-size: 1rem;
+        }
+
+        p{
+            font-family: "Roboto";
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.2rem;
+            letter-spacing: 0.09em;
+            white-space: nowrap;
+            color: ${props => props.theme['gray-100']};
+        }
     }
 
+    @media (max-width: 667px) {
+      display: none;
+
+    }
+
+
 `
+
+
+
+
 export const DownloadApp = styled(SocialNetworks)`
     
+    display: flex;
+    gap: 0px;
+    
+
 
     section{
         display: flex;
         flex-direction: column;
+        align-items: center;
         align-items: flex-start;
-        gap:0px;
+        gap:0rem;
+
+      
 
         img{
 
-            width: 8rem;
+            min-width: 5.5rem;
         }
     }
 
