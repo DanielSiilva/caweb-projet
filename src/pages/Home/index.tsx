@@ -35,6 +35,12 @@ export function Home(){
                   time='Megas' 
                   month="Por mês"             
                />
+               <Card
+                  value={'R$ 90,00'}
+                  plan='350' 
+                  time='Megas' 
+                  month="Por mês"     
+               />
               <Card
                   value={'R$ 100,00'}
                   plan='550' 
