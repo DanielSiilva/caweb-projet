@@ -29,6 +29,10 @@ export const HeaderContainer = styled.header `
         a{
             color: ${(props)=> props.theme['gray-900']};
             text-decoration:none;
+
+            :hover{
+                border-bottom: 2px solid ${(props)=> props.theme['red-700']};
+            }
         }
     }
 
@@ -72,6 +76,10 @@ export const HeaderContainer = styled.header `
                 background: linear-gradient(90deg, #C72940 50%, #2C2D49 142.66%);
                 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
                 border-radius: 8px;
+
+                :hover{
+                    border-bottom: none;
+                }
 
             }
           
