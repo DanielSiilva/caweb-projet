@@ -19,8 +19,6 @@ export function Home(){
             <MainSlogan>
                <span> AQUI VOCÊ FAZ O SEU PLANO</span>
             </MainSlogan>
-
-            {/* Botão waths nova feature*/}
             <WhatsappBox>
                 <a 
                     href="https://api.whatsapp.com/send?phone=559981697800&text=Queria uma informação sobre um produto" >
@@ -43,13 +41,6 @@ export function Home(){
                   time='Megas' 
                   month="Por mês"     
                />
-              <Card
-                  value={'R$ 00,00'}
-                  variant={'black'}
-                  plan='1000' 
-                  time='Megas' 
-                  month="Por mês"
-              />
             </MainCard>
         </MainContainer>
    )   

@@ -126,6 +126,8 @@ export const Help = styled(SocialNetworks)`
 
         span{
             font-size: 1rem;
+            color: ${props => props.theme['gray-100']};
+
         }
 
         p{
@@ -136,7 +138,9 @@ export const Help = styled(SocialNetworks)`
             letter-spacing: 0.09em;
             text-align: center;
             color: ${props => props.theme['gray-100']};
+
         }
+
     }
 
 
@@ -256,6 +260,11 @@ export const Footerr = styled.div`
 
         span{
             color: ${props=> props.theme['yellow-700']};
+
+            a{
+                text-decoration: none;
+                color: ${props=> props.theme['yellow-700']};
+            }
         }
     }
 

@@ -80,7 +80,9 @@ export function Footer(){
             </FooterContainer>
 
             <Footerr>
-                <p>   C 2022 Todos direitos reservados | desenvolvido por <span> Davi Belchior</span> </p>
+                <p>   C 2022 Todos direitos reservados | desenvolvido por 
+                    <span> <a href="https://www.linkedin.com/in/daniel-da-silva-de-sousa-555a55226/">Daniel Sousa</a></span> 
+                </p>
             </Footerr>
         </>
         
